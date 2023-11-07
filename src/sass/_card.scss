@@ -1,0 +1,272 @@
+.card{
+
+    &__wrap{
+        display: flex;
+        align-items: center;
+    }
+
+    &__left{
+        width: 49.3rem;
+        height: 66.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        &-image{
+            position: relative;
+            width: 49.3rem;
+            height: 66.6rem;
+            border-radius: 3rem;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 3rem;
+            }
+        }
+
+        &-wrap{
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index: 10;
+            width: 49.3rem;
+            height: 66.6rem;
+            background: linear-gradient(rgba(136, 235, 239, 0.8), rgba(83, 91, 230, 0.8));
+            border-radius: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &--loc{
+                display: flex;
+                align-items: center;
+            }
+            &--geo{
+                width: 2.7rem;
+                height: 2.7rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &--sun{
+                width: 9.5rem;
+                height: 9.5rem;
+                margin-bottom: .9rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        &-top{
+            padding: 4.8rem 0rem 8.4rem 3.2rem;
+        }
+
+        &-bottom{
+            padding: 4.8rem 0rem 8.4rem 3.2rem;
+        }
+
+        &-day{
+            font-size: 3.7rem;
+            font-weight: 700; 
+            margin-bottom: 1.6rem;
+        }
+
+        &-date{
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        &-geo{
+            font-size: 2rem;
+            font-weight: 600;
+            margin-left: .8rem;
+        }
+
+        &-temp{
+            font-size: 5rem;
+            font-weight: 700;
+            margin-bottom: 1.3rem;
+        }
+
+        &-clarity{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+    
+    }
+
+    &__right{
+        width: 52rem;
+        height: 62.3rem;
+        background: #222831;
+        padding: 5.5rem 5rem 6.2rem 5.7rem;
+        border-radius: 0 3rem 3rem 0;
+
+        &-wrap{
+            &--info{
+                display: flex;
+                flex-direction: column;
+                gap: 2.9rem;
+                margin-bottom: 8rem;
+            }
+            &--row{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+               
+            }
+
+            &--weather{
+                display: flex;
+            }
+        }
+
+        &-weather{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: .1rem .2rem .4rem 0rem #222831;
+            border-radius: 1rem;
+            z-index: 11;
+        }
+
+        &-image{
+            width: 5.5rem;
+            height: 5.5rem;
+            margin: 1.5rem 2.5rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-description{
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+
+        &-info{
+            text-align: right;
+            font-size: 2.8rem;
+            font-weight: 500;
+        }
+
+        &-weather{
+            width: 10.3rem;
+            height: 16.5rem;
+            background: #272E37;
+            cursor: pointer;
+        }
+
+        &-day{
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        &-temp{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        &-geo{
+            width: 3.3rem;
+            height: 3.3rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-link{
+            margin-top: 6.9rem;
+            display: flex;
+            background: linear-gradient(rgba(144, 217, 224, 0.9), rgba(84, 96, 230, 0.9));
+            height: 5.3rem;
+            width: 100%;
+            border-radius: 1rem;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        &-btn{
+            background: none;
+            border: none;
+            color: #FFF;
+            text-align: right;
+            font-family: Montserrat;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-left: .6rem;
+            cursor: pointer;
+        }
+        
+    }
+   
+}
+
+._active{
+    &-bg{
+        background: #fff;
+    }
+
+    &-icon{
+        fill: black;
+    }
+
+    &-txt{
+        color: #000;
+    }
+}
+
+@media (max-width: 64em){
+    .card{
+        &__wrap{
+            flex-direction: column;
+        }
+
+        &__left{
+            &-image{
+                img{
+                    border-radius: 3rem 3rem 0rem 0rem;
+                }
+            }
+            &-wrap{
+                border-radius: 3rem 3rem 0rem 0rem;
+            }
+
+            &-date{
+                font-size: 2.8rem;
+                margin-bottom: 2rem;
+            }
+
+            &-geo{
+                font-size: 2.8rem;
+            }
+        }
+
+        &__right{
+            width: 49.3rem;
+            border-radius: 0rem 0rem 3rem 3rem;
+
+            &-link{
+                margin-top: 5rem;
+                height: 7.3rem;
+            }
+
+            &-btn{
+                font-size: 2.8rem;
+            }
+        }
+    }
+}

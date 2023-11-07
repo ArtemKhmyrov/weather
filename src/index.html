@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link href="css/style.css" rel="stylesheet">
+   
+</head>
+<body>
+    <main>
+        <section class="weather">
+            <div class="container">
+                <div class="card__wrap">
+                    <div class="card__left">
+                        <div class="card__left-image">
+                            <picture >
+                                <img src="./img/png/Restangle.png" alt="Погода">
+                            </picture>
+
+                            <div class="card__left-wrap">
+                                <div class="card__left-top">
+                                    <div class="card__left-day">Tuesday</div>
+                                    <div class="card__left-date">20 Jub 2022</div>
+                                    <div class="card__left-wrap--loc">
+                                        <svg class="card__left-wrap--geo icon-white">
+                                            <use xlink:href="./img/svg/location.svg#location"></use>
+                                        </svg>
+                                        <div class="card__left-geo">Briarritz, FR</div>
+                                    </div>
+                                </div>
+
+                                <div class="card__left-bottom">
+                                    
+                                    <svg class="card__left-wrap--sun icon-white">
+                                        <use xlink:href="./img/svg/sun.svg#sun"></use>
+                                    </svg>
+                                    <div class="card__left-temp">30 °C</div>
+                                    <div class="card__left-clarity">Sunny</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__right">
+
+                        <div class="card__right-wrap--info">
+                            <div class="card__right-wrap--row">
+                                <div class="card__right-description">PRECIPITATION</div>
+                                <div class="card__right-info">0%</div>
+                            </div>
+                            <div class="card__right-wrap--row">
+                                <div class="card__right-description">HUMIDITY</div>
+                                <div class="card__right-info">42%</div>
+                            </div>
+                            <div class="card__right-wrap--row">
+                                <div class="card__right-description">WIND</div>
+                                <div class="card__right-info">3 km/h</div>
+                            </div>
+                        </div>
+
+                        <div class="card__right-wrap--weather">
+                            <div class="card__right-weather _active-bg">
+                                <svg class="card__right-image card__right-icon icon-white _active-icon">
+                                    <use xlink:href="./img/svg/Sun.svg#sun"></use>
+                                </svg>
+                                <div class="card__right-day _active-txt">Tue</div>
+                                <div class="card__right-temp _active-txt">30 °C</div>
+                            </div>
+
+                            <div class="card__right-weather">
+                                <svg class="card__right-icon card__right-image icon-white">
+                                    <use xlink:href="./img/svg/cloud-sun.svg#cloud-sun"></use>
+                                </svg>
+                                <div class="card__right-day">Wed</div>
+                                <div class="card__right-temp">22 °C</div>
+                            </div>
+
+                            <div class="card__right-weather">
+                                <svg class="card__right-icon card__right-image icon-white">
+                                    <use xlink:href="./img/svg/cloud-rain.svg#cloud-rain"></use>
+                                </svg>
+                                <div class="card__right-day">Thu</div>
+                                <div class="card__right-temp">06 °C</div>
+                            </div>
+
+                            <div class="card__right-weather">
+                                <svg class="card__right-icon card__right-image icon-white">
+                                    <use xlink:href="./img/svg/sun.svg#sun"></use>
+                                </svg>
+                                <div class="card__right-day">Fry</div>
+                                <div class="card__right-temp">26 °C</div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="card__right-link">
+                            <svg class="card__right-geo icon-white">
+                                <use xlink:href="./img/svg/location.svg#location"></use>
+                            </svg>
+                            <button class="card__right-btn">Change location</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
